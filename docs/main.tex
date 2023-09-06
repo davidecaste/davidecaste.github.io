@@ -1,0 +1,268 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+%\usepackage{geometry}
+%\geometry{top=2cm}
+\usepackage{comment}
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\newcommand{\cvreference}[7]{%
+    \textbf{#1}\newline% Name
+    \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
+    \ifthenelse{\equal{#3}{}}{}{#3\newline}%
+    \ifthenelse{\equal{#4}{}}{}{#4\newline}%
+    \ifthenelse{\equal{#5}{}}{}{#5\newline}%
+    \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{#6}\newline}%
+    \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
+\usepackage[scale=0.8]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Davide} % Your first name
+\familyname{Castelnovo} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Ph. D.}
+\address{Udine (UD), Italy, 33100}
+\mobile{(+39) 3348908828}
+\email{castelnovod@gmail.com}
+\homepage{https://davidecaste.github.io}  % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\homepage{}{Homepage}
+\extrainfo{Citizenship: Italian}
+%\photo[70pt][0.4pt]{pictures/House} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+%----------------------------------------------------------------------------------------
+%EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{Jun. 2023 - Jun. 2024}{Research Fellow}{University of Padova}{Italy}{}{}
+
+\cventry{Nov. 2019 - Oct. 2023 (expected)}{Ph. D.}{University of Udine}{Italy}{}
+{\begin{itemize}
+  \item Subjects: Algebraic theories, Categorical models for graph rewriting 
+  \item Supervisor: Prof. Marino Miculan
+\end{itemize}
+}
+
+\cventry{Jan. - May 2022}{Visiting student at Tallinn Institute of Technology}{Tallinn}{Estonia}{Collaborating with Dr. Fosco Loregian}
+{}
+
+\cventry{Oct. 2016 - Dec. 2018}{Master in Mathematics}{University of Milano}{Italy}{}
+{\begin{itemize}
+  %\item Majors: General Relativity, Cosmology, The Physical Universe.
+  \item Master thesis \textit{``A conservative embedding of intuitionistic logic
+  	in a topos of sheaves"}
+  \begin{itemize}
+      \item Supervisors: Prof. S. Mantovani (Univ. of Milano) \& Prof. M. E. Maietti (Univ. of Padova).
+  \end{itemize}
+  \item GPA: 110/110 summa cum laude.
+\end{itemize}
+}
+
+
+\cventry{Oct. 2012 - Jul. 2016}{Bachelor in Mathematics}{University of Milano}{Italy}{}
+{\begin{itemize}
+  \item GPA: 99/110
+\end{itemize}
+}
+
+\cventry{2007 - 2012}{High School}{Liceo Scientifico Tecnologico ``Antonio Badoni"}{Lecco, Italy}{}
+{\begin{itemize}
+  \item GPA: 97/100
+\end{itemize}
+}
+ \iffalse 
+\section{Awards}
+
+\cventry{2019}{Ph.D. Scholarship}{SFB 956 collaboration}{Project C4: Star formation and feedback in simulations of galaxy formation}{AIfA}{}{}
+
+\cventry{2019}{Ph.D. Scholarship}{Tor Vergata University}{Rome}{(declined)}{}{}
+
+\cventry{March 2019 - June 2019}{Undergraduate fellowship}{Laboratory-of-Excellence OCEVU undergraduate fellowship}{Under the supervision of Dr. Carlo Schimd}{Laboratoire d'Astrophysique de Marseille}{}
+
+\cventry{Sept. 2018 - June 2019}{Erasmus at Aix-Marseille Universit\'e}{Master 2 - Fundamental Physics}{France}{}
+{\begin{itemize}
+  \item Majors: The Relativistic Universe, Galaxies and Cosmology, Astroparticles.
+  \item Project on \textit{"CMB fluctuations: from Planck maps to cosmological parameters"}. Supervisor: Prof. G. Lagache.
+  %\item Stage at Observatoire de Haute-Provence: observations with the 0.80m and 1.20m telescopes (interferometry of Solar System objects; imaging of galactic and extra-galactic objects).
+  %\item Scientific Watch on \textit{"Collider constraints on light mediators connecting the SM to the dark sector"}. Supervisor: Dr. A. Bharucha.
+  \item Weighted Average Mark: 16.60/20.00 (best 5\% of the second year Physics Master students).
+\end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%	Collaborations SECTION
+%----------------------------------------------------------------------------------------
+
+\section{International collaboration and membership}
+
+\cventry{Gen. 2020 - today}{Member of the International Max Planck Research School for Astronomy $\&$ Astrophysics (IMPRS)}{Max Planck Institute for Radio Astronomy}{Germany}{}{}
+
+\cventry{Nov. 2019 - today}{Member of the SFB 956 collaboration}{project C4 (P.I. Prof. Dr. Cristiano Porciani)}{Germany}{}{}
+
+\section{Certifications}
+\cventry{2021}{Solution focus and resilience for successful careers}{SFB 956}{(8hrs, online)}{}{}
+\cventry{2020}{Didactics Seminar: Teaching Teaching, Understanding Understanding}{IMPRS}{(16hrs, online)}{}{}
+\fi 
+
+\section{Talks and workshops}
+\cventry{2023}{  Talk at PRIN 2017 ``IT-MATTERS" Final Workshop  ``$\mathcal{M,N}$-adhesivity: results and examples"}{Scuola IMT Alti Studi}{Lucca}{Italy}
+{}
+\cventry{2022}{3$^{\mathbf{rd}}$ ItaCa Workshop}{University of Pisa}{Pisa, Italy}{}
+{}
+
+
+\cventry{2022}{9$^{\mathbf{th}}$ Symposium on Compositional Structures}{University of Como}{Como, Italy}{}
+{}
+
+\cventry{2022}{  Talk at 25$^{\mathbf{th}}$ International Conference on Foundations of Software Science and Computation Structures,  ``A new criterion for $\mathcal{M,N}$-adhesivity, with an application to hierarchical graphs"}{Technische Universit$\ddot{\textsf{a}}$t M$\ddot{\textsf{u}}$nchen}{M$\ddot{\textsf{u}}$nchen}{Germany}
+{}
+
+\cventry{2022}{Talk at 30$^{\mathsf{th}}$ EACSL Annual Conference on Computer Science in Logic 2022, ``Fuzzy Algebraic theories"}{University of G$\ddot{\textsf{o}}$ttingen}{G$\ddot{\textsf{o}}$ttingen (online)}{Germany}{}{}
+{}
+
+
+\cventry{2021}{Talk at {22}$^{\mathbf{nd}}$ Graduate Student Conference in Logic ``Closure Hyperdoctrines''}{University of Illinois}{Urbana-Champaign (online)}{United States of America}{}
+
+
+\cventry{2021}{International Conference on Algebra, Topology and Their Interactions}{Udine (online)}{Italy}{}{}
+
+\cventry{2021}{Talk at {9}$^{\mathbf{th}}$ Conference  Conference on Algebra and Coalgebra in Computer Science, ``Closure Hyperdoctrines''}{University of Salzburg}{Salzburg}{Austria}{}
+
+\cventry{2021}{Midlands Graduate School in the Foundations of Computing Science}{IMPRS}{(online)}{}
+{}
+
+
+\cventry{2020}{ Talk at TallCat - Compositional Systems and Methods group at TalTech, ``Equational theories in an enriched context".}{Tallinn Institute of Technology}{Tallinn (online)}{Estonia}
+{}
+
+\cventry{2020}{Talk at {25}$^{\mathbf{th}}$ Estonian Winter School in Computer Science, ``Preclosure Hyperdoctrines, Completeness of (Higher Order) Spatial Logic for Closure Spaces''}{Tallinn Institute of Technology}{Palmse}{Estonia}{}
+
+\cventry{2019}{1$^{\mathbf{st}}$ ItaCa Workshop}{University of Milano}{Milano, Italy}{}
+{}
+
+
+\section{Teaching and outreach activities}
+
+\cventry{2020, 2021 (winter term)}{Undergraduate students tutoring}{}{Tutoring the \textit{Algebra 1} class for the first year of the Math undergraduate program, University of Udine.}{}
+{}
+
+\cventry{2021 \\ (winter term)}{Undergraduate students tutoring}{}{Tutoring the \textit{Linear Algebra} for the first year of the Mechanical Engineering undergraduate program, University of Udine.}{}
+{}
+
+\section{Other Scientific Activity}
+\cventry{Sep. 7-8, 2021}{Member of the Organizing Committee of the International Conference on Algebra, Topology and Their Interactions}{Udine (online)}{Italy}{}
+{}
+
+\cventry{2020 - 2023}{Students' representative at Mathematics, Computer Science and Physics Departmental Council}{Univ. of Udine}{Italy}{}
+{}
+\cventry{2021 - 2023}{Students' representative at Mathematics, Computer Science and Physics PhD School Council}{University of Udine}{Italy}{}
+{}
+
+%----------------------------------------------------------------------------------------
+%	Skills SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Technical Skills}
+%
+\cvitem{Programming}{\textsc{Haskell} (basic), \textsc{C++} (basic)}
+\cvitem{OS}{\textsc{Linux, Windows}}
+\cvitem{Editing}{\textsc{\LaTeX, Office Package}}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Italian}{Mother tongue}{}
+\cvitemwithcomment{English}{Fluent, speaking and writing}{}
+
+\iffalse 
+\section{References}
+
+\cventry{Prof.}{Marino Miculan}{}{\newline \hspace{0.5cm} email: marino.micula@uniud,it}{\newline \hspace{0.5cm} Argelander Institut f$\mathrm{\ddot{u}}$r Astronomie der Universit$\ddot{a}$t Bonn}{}{}
+
+\cventry{Prof. Dr.}{Sabino Matarrese}{}{\newline \hspace{0.5cm} email: sabino.matarrese@pd.infn.it}{\newline \hspace{0.5cm} Department of Physics and Astronomy - Galileo Galilei, University of Padova}{INFN, Padova Section; INAF - Astronomical Observatory of Padova}{ \hspace{2.4cm} Gran Sasso Science Institute}{\newline}{}
+
+\cventry{Dr.}{Carlo Schimd}{}{\newline \hspace{0.5cm} email: carlo.schimd@lam.fr}{\newline \hspace{0.5cm} Laboratoire d'Astrophysique de Marseille}{}{}
+
+\cventry{Dr.}{Enrico Garaldi}{}{\newline \hspace{0.5cm} email: egaraldi@MPA-Garching.MPG.DE}{\newline \hspace{0.5cm} Max-Planck-Institut fuer Astrophysik}{}{}
+\fi 
+
+\section{List of publications}
+
+\begin{itemize}
+	\item Davide Castelnovo, Fabio Gadducci, Marino Miculan, \emph{A simple criterion for $\mathcal{M, N}$-adhesivity}, 2022, submitted to Theoretical Computer Science;
+	\item Davide Castelnovo, Fabio Gadducci, Marino Miculan, \emph{A new criterion for $\mathcal{M, N}$-adhesivity, with an application to hierarchical graphs}, 2022, Proceedings of	 the 25$^{\mathbf{th}}$ International Conference on Foundations of Software Science and Computation Structures;
+	\item Davide Castelnovo, Marino Miculan, \emph{Fuzzy Algebraic Theories},
+	 Proceedings of the 30th EACSL Annual Conference on Computer Science Logic, 2022;
+	\item Davide Castelnovo, Marino Miculan, \emph{Closure Hyperdoctrines},
+		Proceedings of the 9$^{\mathsf{th}}$ Conference on Algebra and Coalgebra in Computer Science.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title
+
+%\lipsum[1-3] % Dummy text
+
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
+
+
+
